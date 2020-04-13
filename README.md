@@ -21,7 +21,7 @@ Terminal 2 (Open up a new one) - Build and start the chaincode
 Terminal 3 (Open another one)
 
 1. docker exec -it cli bash
-2.  peer chaincode install -p chaincodedev/chaincode/chaincode_example02/go -n mycc -v 0
+2.  peer chaincode install -p chaincodedev/chaincode/ -n mycc -v 0
 3.  peer chaincode instantiate -n mycc -v 0 -c '{"Args":[""]}' -C myc
 4. peer chaincode invoke -C myc -n mycc -c '{"function":"initCar","Args":["Ashwani","Blue","BMW"]}'
 5. peer chaincode query -C myc -n mycc -c '{"function":"readCar","Args":["Ashwani"]}
